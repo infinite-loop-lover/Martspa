@@ -8,41 +8,6 @@ I have build this project for technical test
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Result
-### Home
-![](./1.png)
-
-### Loading
-![](./2.png)
-
-### Recent Search
-![](./3.png)
-
-### Popular Search
-![](./4.png)
-
-### Search Result
-![](./5.png)
-
-## Development
-
-### Fetch API
-if you fetch api on frontend, CORS error appear.
-you have to fetch api on backend
-
-### API
-
-#### Get Products
-https://api.matspar.se/slug
-
-Post Request Body
-
-{
-
-        slug : "/kategori",
-
-        query : {"q" : req.body.Squery}
-}
 
 #### Get search suggestions
 
