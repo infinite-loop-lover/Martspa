@@ -1,0 +1,158 @@
+.main {
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchPart{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: #9095A6 1px solid;
+  border-radius: 40px;
+  align-items: center;
+  transition: all .5s;
+}
+.searchbar {
+  margin: 0 10px 0 20px;
+  font-size: 14px;
+  background-color: #F1F1FF;
+  border: none!important;
+  outline: none!important;
+}
+.searchbar:focus{
+  outline: none!important;
+}
+.title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #1B153D;
+  margin: 32px 0;
+}
+.tab_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+}
+
+.tab {
+  display: none;
+}
+.tab__content{
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+
+.tab:checked + label {
+  color: #17A030;
+  cursor: default;
+  border-bottom: #17A030 2px solid;
+
+}
+.tab + label {
+  color: #9095A6A6;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+
+.container {
+  margin: 0 auto;
+}
+
+.tabContent_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap : 20px;
+}
+.productItem{
+  width: 100%;
+  background-color: #fff;
+  align-items: center;
+  border-radius: 14px;
+  margin-top: 20px;
+}
+.productItem p{
+  margin: 0;
+}
+.productLogo{
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  align-items: center;
+}
+.productName{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1B153D;
+  padding-top: 16px;
+}
+.productBrand{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9095A6;
+  padding-top: 8px;
+}
+.productPrice {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #17A030;
+  padding-top: 20px;
+}
+.searchHeader{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #9095A6 1px solid;
+}
+.searchHeader p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #9095A6;
+}
+.searchResultItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loader {
+  border: 3px solid #f3f3f3; 
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 5rem auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
